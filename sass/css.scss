@@ -1,0 +1,71 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+//colors
+$white: #fff;
+$black_10: rgba(0,0,0,.1);
+
+//fonts
+$font_0: Poppins;
+$font_1: sans-serif;
+
+
+* {
+	
+	box-sizing: border-box;
+}
+body {
+	background-color: $white;
+	font-family: $font_0, $font_1;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	margin: 0;
+}
+
+
+.header {
+	background-color: $white;
+	box-shadow: 1px 1px 4px 0 $black_10;
+	width: 100%;
+	z-index: 3;
+}
+
+.header .logo {
+	display: block;
+	float: left;
+	font-size: 2.5em;
+	padding: 20px 20px;
+	text-decoration: none;
+    color:lawngreen;
+}
+
+.btn {
+	background-color: blueviolet;
+    border-radius: 5px;
+	border: none;
+	color: $white;
+    width: 300px;
+    height: 150px;
+	margin: 1rem;
+	padding: 1.5rem 3rem;
+	font-size: 1.2rem;
+	font-family: inherit;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.8;
+		background-color: $white;
+		color: blueviolet;
+	}
+	&:focus {
+		outline: none;
+	}
+}
